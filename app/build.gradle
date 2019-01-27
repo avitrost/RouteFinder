@@ -19,11 +19,29 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.android.support:design:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation files('libs/commons-cli-1.2.jar')
+    implementation files('libs/commons-codec-1.11.jar')
+    implementation files('libs/commons-logging-1.2.jar')
+    implementation files('libs/fluent-hc-4.5.7.jar')
+    implementation files('libs/httpasyncclient-4.0-beta4.jar')
+    implementation files('libs/httpclient-4.5.7.jar')
+    implementation files('libs/httpclient-cache-4.5.7.jar')
+    implementation files('libs/httpclient-osgi-4.5.7.jar')
+    implementation files('libs/httpclient-win-4.5.7.jar')
+    implementation files('libs/httpcore-4.4.11.jar')
+    implementation files('libs/httpcore-ab-4.4.11.jar')
+    implementation files('libs/httpcore-nio-4.4.11.jar')
+    implementation files('libs/httpcore-osgi-4.4.11.jar')
+    implementation files('libs/httpmime-4.5.7.jar')
+    implementation files('libs/java-json.jar')
+    implementation files('libs/jna-4.5.2.jar')
+    implementation files('libs/jna-platform-4.5.2.jar')
+    implementation files('libs/unirest-java-1.4.9.jar')
 }
